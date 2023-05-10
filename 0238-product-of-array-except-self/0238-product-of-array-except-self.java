@@ -2,24 +2,27 @@ class Solution {
     public int[] productExceptSelf(int[] nums) {
         int length = nums.length;
 
-        int[] left = new int[length];
-        int[] right = new int[length];
-
         int[] ans = new int[length];
-
-        left[0] = 1;
-        right[length - 1] = 1;
-
-        for(int i = 1; i < length; i++){
-            left[i] = nums[i - 1] * left[i - 1];
-        }
-        for(int i = length - 2; i >= 0; i--){
-            right[i] = right[i + 1] * nums[i + 1];
-        }
+        
+        int prefix = 1;
+        int postfix = 1;
+        
+        // we will now write the forward pass for the prefix array
         for(int i = 0; i < length; i++){
-            ans[i] = left[i] * right[i];
+            ans[i] = prefix;
+            prefix *= nums[i];
         }
-
+        
+        // array becomes ans ---> [1, 1, 2, 6]
+        
+        // now we will write the backward pass for the postfix array
+        for(int i = length - 1; i >= 0; i--){
+            ans[i] *= postfix;
+            postfix *= nums[i];
+        }
+        
+        // array becomes ans ---> [24, 12, 8, 6]
+        
         return ans;
     }
 }
