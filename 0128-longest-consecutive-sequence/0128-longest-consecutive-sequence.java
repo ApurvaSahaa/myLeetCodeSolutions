@@ -8,8 +8,8 @@ class Solution {
             if(!set.contains(i - 1)){
                 int count = 1;
                 while(set.contains(i + 1)){
-                    count++;
                     i++;
+                    count++;
                 }
                 ans = Math.max(ans, count);
             }
