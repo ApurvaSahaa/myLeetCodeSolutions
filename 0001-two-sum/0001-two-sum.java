@@ -14,6 +14,7 @@ class Solution {
             int b = target - nums[i];
             if (map.containsKey(b))
             {
+                // only creating the array inside this block since we always have an answer
                 int[] ans = {i, map.get(b)};
                 return ans;
             }
