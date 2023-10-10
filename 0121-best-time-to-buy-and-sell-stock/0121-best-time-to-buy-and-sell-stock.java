@@ -1,7 +1,7 @@
 class Solution {
     public int maxProfit(int[] prices) {
         
-        //pseudocode
+        // pseudocode
         // we are given an integer array containing prices on each day
         // buy low sell high
         // we start buying on the first day so prices[0]
@@ -23,6 +23,8 @@ class Solution {
         
             // end when right pointer reaches length of the array
         
+        
+        // source code
         int left  = 0;
         int right = left + 1;
         int maxProfit = 0;
