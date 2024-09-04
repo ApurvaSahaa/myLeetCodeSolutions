@@ -1,6 +1,6 @@
 class Solution:
     def judgeCircle(self, moves: str) -> bool:
-        
+        '''
         pos = [0, 0]
         
         for i in moves:
@@ -14,3 +14,7 @@ class Solution:
                 pos[0] -= 1
         
         return pos[0] == 0 and pos[1] == 0
+        
+        '''
+        
+        return moves.count('R') == moves.count('L') and moves.count('U') == moves.count('D')
