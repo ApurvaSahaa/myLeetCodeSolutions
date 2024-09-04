@@ -7,6 +7,12 @@ class Solution:
         else:
             res = 1
         
+        # need to set res to be at least 1
+        # start iterating from next index
+        # if total ever drops less than 1
+        # run a loop incrementing res and total till total becomes 1
+        # finally return res
+        
         index = 1
         total = res + nums[0]
         while index < len(nums):
