@@ -19,7 +19,14 @@ class Solution:
         return original
         
         '''
+        '''
+        while original in nums:
+            original *= 2
+        return original
         
+        '''
+        
+        nums = set(nums)
         while original in nums:
             original *= 2
         return original
