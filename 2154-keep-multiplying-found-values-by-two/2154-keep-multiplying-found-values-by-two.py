@@ -7,7 +7,7 @@ class Solution:
         # otherwise stop the process --> break out
         # repeat the process with new number as long as you keep finding the number
         # return final value of original
-        
+        '''
         in_there = True
         
         while in_there:
@@ -18,3 +18,8 @@ class Solution:
         
         return original
         
+        '''
+        
+        while original in nums:
+            original *= 2
+        return original
