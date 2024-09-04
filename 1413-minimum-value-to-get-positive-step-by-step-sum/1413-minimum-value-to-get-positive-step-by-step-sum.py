@@ -1,7 +1,7 @@
 class Solution:
     def minStartValue(self, nums: List[int]) -> int:
         # the total should never be less than 1
-        
+        '''
         if nums[0] < 0:
             res = -nums[0] + 1
         else:
@@ -23,4 +23,12 @@ class Solution:
                     total += 1
             index += 1
         return res
-            
+        
+        '''
+        
+        total = 0
+        res = 1
+        for i in nums:
+            total += i
+            res = max(res, 1 - total)
+        return res
