@@ -4,9 +4,7 @@ class Solution:
         map = {}
         
         for i, n in enumerate(nums):
-            diff = target - n;
+            diff = target - n
             if diff in map.keys():
                 return [map[diff], i]
             map[n] = i
-            
-    
