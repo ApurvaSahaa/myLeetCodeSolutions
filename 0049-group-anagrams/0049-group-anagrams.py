@@ -12,6 +12,6 @@ class Solution:
             else:
                 wmap[key] = [i]
 
-        for k, v in wmap.items():
-            output.append(v)
+        for k in wmap.keys():
+            output.append(wmap[k])
         return output
