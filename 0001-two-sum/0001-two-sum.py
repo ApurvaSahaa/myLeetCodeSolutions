@@ -1,10 +1,11 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         
-        map = {}
-        
-        for i, n in enumerate(nums):
-            diff = target - n
-            if diff in map.keys():
-                return [map[diff], i]
-            map[n] = i
+        nmap = {}
+
+        for i in range(len(nums)):
+            diff = target - nums[i]
+            if diff in nmap.keys():
+                return [nmap[diff], i]
+            else:
+                nmap[nums[i]] = i
