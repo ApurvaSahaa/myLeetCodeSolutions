@@ -1,25 +1,22 @@
 class Solution:
     def trap(self, height: List[int]) -> int:
-        
-        maxleft = [0] * len(height)
-        maxleft[0] = height[0]
-        for i in range(1, len(height)):
-            prevmax = maxleft[i-1]
-            maxleft[i] = max(prevmax, height[i])
-        
-        maxright = [0] * len(height)
-        maxright[len(height) - 1] = height[len(height) - 1]
-        for i in range(len(height) - 2, -1, -1):
-            prevmax = maxright[i + 1]
-            maxright[i] = max(prevmax, height[i])
-        
-        water_trapped = [0] * len(height)
-        for i in range(len(water_trapped)):
-            water = (min(maxleft[i], maxright[i]) - height[i])
-            if water > 0:
-                water_trapped[i] = water
-        res = 0
-        for i in water_trapped:
-            res += i
-        
-        return res
+        #initialize total array same len as height and all 0s
+        #get the l and r pointers
+        #as we move through the height array
+        #take left till the end and right till the beginning
+        #while doing that keep replacing the total array with min values
+
+        total = [10**5 + 1]*len(height)
+        l, r = 0, len(height) - 1
+        maxlh= height[l]
+        maxrh = height[r]
+        while l < len(height) and r >= 0:
+            maxlh = max(maxlh, height[l])
+            maxrh = max(maxrh, height[r])
+            leftwater = maxlh - height[l]
+            rightwater = maxrh - height[r]
+            total[l] = min(total[l], leftwater)
+            total[r] = min(total[r], rightwater)
+            l += 1
+            r -= 1
+        return sum(total)
