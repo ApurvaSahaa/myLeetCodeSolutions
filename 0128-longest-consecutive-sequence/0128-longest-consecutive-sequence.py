@@ -6,14 +6,16 @@ class Solution:
         # if it does not then it is a start
         # then we start trying to check to the right of the number
         # once we reach the end and no more right neighbor exists we end the count
-        
-        numSet = set(nums)
-        longest = 0
-
-        for n in nums:
-            if (n - 1) not in numSet:
-                length = 1
-                while (n + length) in numSet:
-                    length += 1
-                longest = max(longest, length)
+        numset = set(nums)
+        if len(nums) == 0:
+            return 0
+        longest = 1
+        for i in numset:
+            if i - 1 not in numset:
+                currNum = i
+                currLen = 1
+                while currNum + 1 in numset:
+                    currNum += 1
+                    currLen += 1
+                longest = max(longest, currLen)
         return longest
