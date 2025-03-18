@@ -1,9 +1,8 @@
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        output = []
+        out = []
         if len(strs) == 0:
-            return output.append([""])
-        
+            return [""]
         wmap = {}
         for i in strs:
             key = ''.join(sorted(i))
@@ -11,7 +10,6 @@ class Solution:
                 wmap[key].append(i)
             else:
                 wmap[key] = [i]
-
-        for k in wmap.keys():
-            output.append(wmap[k])
-        return output
+        for k, v in wmap.items():
+            out.append(v)
+        return out 
