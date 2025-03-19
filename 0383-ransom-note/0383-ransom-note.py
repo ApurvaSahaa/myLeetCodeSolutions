@@ -1,5 +1,7 @@
 class Solution:
     def canConstruct(self, ransomNote: str, magazine: str) -> bool:
+        if len(magazine) < len(ransomNote):
+            return False
         wmap = {}
         for i in ransomNote:
             wmap[i] = wmap.get(i, 0) + 1
