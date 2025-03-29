@@ -3,11 +3,12 @@ class Solution:
         if len(s) != len(t):
             return False
         
-        arr = [0]*26
+        ca = [0]*26
         for i in range(len(s)):
-            arr[ord(s[i]) - ord('a')] += 1
-            arr[ord(t[i]) - ord('a')] -= 1
-        for i in arr:
+            ca[ord(s[i]) - ord('a')] += 1
+            ca[ord(t[i]) - ord('a')] -= 1
+        
+        for i in ca:
             if i != 0:
                 return False
         return True
