@@ -5,6 +5,6 @@ class Solution:
         for i in range(len(nums)):
             rem = target - nums[i]
             if rem in nmap.keys():
-                return [i, nmap[rem]]
+                return [nmap[rem], i]
             nmap[nums[i]] = i
         return []
