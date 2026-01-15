@@ -1,5 +1,6 @@
 class Solution:
     def replaceElements(self, arr: List[int]) -> List[int]:
+        '''
         maxval = arr[-1]
         arr[-1] = -1
         
@@ -8,4 +9,15 @@ class Solution:
             arr[i] = maxval
             if curr > maxval:
                 maxval = curr
+        return arr
+        '''
+        p = -1
+        g = arr[-1]
+        while p >= -len(arr):
+            t = arr[p]
+            arr[p] = g
+            if t > g:
+                g = t
+            p -= 1
+        arr[-1] = -1
         return arr
