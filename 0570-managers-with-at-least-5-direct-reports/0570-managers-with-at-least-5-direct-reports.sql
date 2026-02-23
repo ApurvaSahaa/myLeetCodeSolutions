@@ -1,11 +1,11 @@
 -- Write your PostgreSQL query statement below
-select name
-from employee e
-where e.id in 
-(select e1.id
-from employee e1
-join
-employee e2 on e1.id = e2.managerId
-group by e1.id
-having count(*) >= 5
+with reportcount as (
+    select managerId, count(*) as count
+    from employee
+    group by managerId
+    having count(*) >= 5
 )
+
+select name
+from employee
+where id in (select managerId from reportcount)
