@@ -14,4 +14,5 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1045-customers-who-bought-all-products](https://github.com/ApurvaSahaa/myLeetCodeSolutions/tree/main/1045-customers-who-bought-all-products/) | Medium |
 | [1050-actors-and-directors-who-cooperated-at-least-three-times](https://github.com/ApurvaSahaa/myLeetCodeSolutions/tree/main/1050-actors-and-directors-who-cooperated-at-least-three-times/) | Easy |
 | [1068-product-sales-analysis-i](https://github.com/ApurvaSahaa/myLeetCodeSolutions/tree/main/1068-product-sales-analysis-i/) | Easy |
+| [1070-product-sales-analysis-iii](https://github.com/ApurvaSahaa/myLeetCodeSolutions/tree/main/1070-product-sales-analysis-iii/) | Medium |
 <!---LeetCode Topics End-->
