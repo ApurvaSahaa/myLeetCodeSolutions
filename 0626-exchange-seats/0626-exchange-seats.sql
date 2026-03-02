@@ -6,6 +6,8 @@ case
 end as id, student
 from seat s1
 order by id */
+-- the above query will be much slower than the one below due to the executing to subqueries for each 
+-- line in the table seat to scan tbe table again for the subquery
 
 select
 case
