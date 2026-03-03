@@ -20,4 +20,5 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1141-user-activity-for-the-past-30-days-i](https://github.com/ApurvaSahaa/myLeetCodeSolutions/tree/main/1141-user-activity-for-the-past-30-days-i/) | Easy |
 | [1148-article-views-i](https://github.com/ApurvaSahaa/myLeetCodeSolutions/tree/main/1148-article-views-i/) | Easy |
 | [1158-market-analysis-i](https://github.com/ApurvaSahaa/myLeetCodeSolutions/tree/main/1158-market-analysis-i/) | Medium |
+| [1164-product-price-at-a-given-date](https://github.com/ApurvaSahaa/myLeetCodeSolutions/tree/main/1164-product-price-at-a-given-date/) | Medium |
 <!---LeetCode Topics End-->
