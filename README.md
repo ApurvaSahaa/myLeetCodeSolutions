@@ -24,4 +24,5 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1174-immediate-food-delivery-ii](https://github.com/ApurvaSahaa/myLeetCodeSolutions/tree/main/1174-immediate-food-delivery-ii/) | Medium |
 | [1179-reformat-department-table](https://github.com/ApurvaSahaa/myLeetCodeSolutions/tree/main/1179-reformat-department-table/) | Easy |
 | [1204-last-person-to-fit-in-the-bus](https://github.com/ApurvaSahaa/myLeetCodeSolutions/tree/main/1204-last-person-to-fit-in-the-bus/) | Medium |
+| [1211-queries-quality-and-percentage](https://github.com/ApurvaSahaa/myLeetCodeSolutions/tree/main/1211-queries-quality-and-percentage/) | Easy |
 <!---LeetCode Topics End-->
