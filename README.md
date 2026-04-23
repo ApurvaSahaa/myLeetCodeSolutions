@@ -26,4 +26,5 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1204-last-person-to-fit-in-the-bus](https://github.com/ApurvaSahaa/myLeetCodeSolutions/tree/main/1204-last-person-to-fit-in-the-bus/) | Medium |
 | [1211-queries-quality-and-percentage](https://github.com/ApurvaSahaa/myLeetCodeSolutions/tree/main/1211-queries-quality-and-percentage/) | Easy |
 | [1251-average-selling-price](https://github.com/ApurvaSahaa/myLeetCodeSolutions/tree/main/1251-average-selling-price/) | Easy |
+| [1280-students-and-examinations](https://github.com/ApurvaSahaa/myLeetCodeSolutions/tree/main/1280-students-and-examinations/) | Easy |
 <!---LeetCode Topics End-->
