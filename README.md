@@ -29,6 +29,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1211-queries-quality-and-percentage](https://github.com/ApurvaSahaa/myLeetCodeSolutions/tree/main/1211-queries-quality-and-percentage/) | Easy |
 | [1251-average-selling-price](https://github.com/ApurvaSahaa/myLeetCodeSolutions/tree/main/1251-average-selling-price/) | Easy |
 | [1280-students-and-examinations](https://github.com/ApurvaSahaa/myLeetCodeSolutions/tree/main/1280-students-and-examinations/) | Easy |
+| [1378-replace-employee-id-with-the-unique-identifier](https://github.com/ApurvaSahaa/myLeetCodeSolutions/tree/main/PostgreSQL/Easy/1378-replace-employee-id-with-the-unique-identifier/) | Easy |
 | [1683-invalid-tweets](https://github.com/ApurvaSahaa/myLeetCodeSolutions/tree/main/PostgreSQL/Easy/1683-invalid-tweets/) | Easy |
 | [1757-recyclable-and-low-fat-products](https://github.com/ApurvaSahaa/myLeetCodeSolutions/tree/main/1757-recyclable-and-low-fat-products/) | Easy |
 <!---LeetCode Topics End-->
